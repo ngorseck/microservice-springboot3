@@ -1,0 +1,15 @@
+#Server port
+server:
+  port: 8889
+#application name
+spring:
+  #cloud:
+    #discovery:
+      #enabled: true
+  application:
+    name: GATEWAY-SERVICE
+#it is a client and a gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka

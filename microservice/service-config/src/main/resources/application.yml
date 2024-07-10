@@ -1,0 +1,15 @@
+server:
+  port: 8888
+#Pour afficher les configs tapez ces utls
+#http://localhost:8888/application/main
+#http://localhost:8888/client-service/main
+#http://localhost:8888/security-service/main
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ngorseck/microservice-config.git
+  application:
+    name: CONFIG-SERVICE
+#Ce service ne va pas senregistre

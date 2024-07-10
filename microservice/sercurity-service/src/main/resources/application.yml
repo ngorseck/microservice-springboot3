@@ -1,0 +1,19 @@
+#server port
+server:
+  port: 8886
+#application name
+spring:
+  #cloud:
+    #discovery:
+      #enabled: true
+  application:
+    name: SECURITY-SERVICE
+#it is a eureka client
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
